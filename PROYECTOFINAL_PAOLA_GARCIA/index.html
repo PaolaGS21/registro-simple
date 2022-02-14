@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilo_SLIDE.css" />
+    <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css" />
+    <link href="https://fonts.googleapis.com/css?family=Abel|Oswald" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/66f5e943e2.js' crossorigin='anonymous'></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="responsiveslides.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script type="text/javascript" src="fancybox/jquery.fancybox.js"></script>
+    <script src="jquery.tinycarousel.js"></script>
+    <script src="wow.min.js"></script>
+    <!--Efecto scroll de regreso-->
+    <script src="jquery.scrollUp.js"></script>
+    <script>
+        $(function () {
+            $.scrollUp({
+                scrollImg: true
+            });
+        });
+    </script>
+
+    <title>PROYECTO FINAL</title>
+</head>
+
+<body>
+    <!--La barra de color azul-->
+    <hr class="barra_header">
+    <!--Información de contacto y logos de Twitter Facebook Instagram-->
+    <header class="logo_redes ancho">
+        <div>
+            <div>
+                <i class="icono-tel fas fa-phone-alt fa-2x"></i>
+            </div>
+            <div>
+                <h3>Free Quote:</h3>
+                <p>+012 (34) 789</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <i class="icono-tel fas fa-envelope fa-2x"></i>
+            </div>
+            <div>
+                <p>Email Address:</p>
+                <p>support@gmail.com</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <i class="icono-tel fas fa-clock fa-2x"></i>
+            </div>
+            <div>
+                <p>Working Hour:</p>
+                <p>08 am - 10 pm</p>
+            </div>
+        </div>
+        <div class="redes">
+            <a href=""><i class="iconos fab fa-facebook-f"></i></a>
+            <a href=""><i class="iconos fab fa-twitter"></i></a>
+            <a href=""><i class="iconos fab fa-instagram"></i></a>
+        </div>
+    </header>
+    <header>
+        <!--Menu responsivo con JS-->
+        <div class="contenedorlogovisble">
+            <li id="visible"><a><img class="logovisible" src="imagenes/logo.png" alt=""></a></li>
+        </div>
+        <header>
+            <nav class="nav-menu-responsivo ancho">
+                <div class="contenedorcirculo">
+                    <a class="circulo"><i id="iconomenu" class="fas fa-bars fa-2x"></i></a>
+                </div>
+                <ul id="menu" class="contenedormenu">
+                    <li id="novisible"><a><img class="logonovisble" src="imagenes/logo.png" alt=""></a></li>
+                    <li id="visible"><a><img class="logovisible2" src="imagenes/logo2.png" alt=""></a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                    <li><a href="#">MECHANIC</a></li>
+                    <li><a href="#">PRINCING</a></li>
+                    <li><a href="#">TESTIMONIAL</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <script>
+            $("#iconomenu").click(function () {
+                $("#menu").slideToggle();
+            });
+        </script>
+        <!--Menu responsivo con JS-->
+
+        <!--Slider de fotos responsivo con JS-->
+        <script>
+            $(function () {
+                $("#slider4").responsiveSlides({
+                    auto: false,
+                    pager: false,
+                    nav: true,
+                    speed: 500,
+                    namespace: "callbacks",
+                });
+            });
+        </script>
+        <section class="section1-slider">
+            <section id="contenedorslide">
+                <div class="callbacks_container">
+                    <ul class="rslides" id="slider4">
+                        <li class="cajatexto">
+                            <img src="slide1.jpg" alt="" />
+                            <div class="caption">
+                                <p class="animate__animated animate__backInLeft animate__delay-2s">Lorem ipsum dolor sit
+                                    amet.
+                                </p>
+                                <p class="animate__animated animate__backInRight animate__delay-4s">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                                    deleniti perferendis aliquid expedita voluptatum a porro minus
+                                    ad, doloremque atque explicabo cum numquam, nulla beatae
+                                    incidunt quidem qui harum est!
+                                </p>
+                                <a href="#" class="boton animate__animated animate__bounceInUp animate__delay-5s">JOIN
+                                    NOW</a>
+                            </div>
+                        </li>
+                        <li class="cajatexto">
+                            <img src="slide2.jpg" alt="" />
+                        </li>
+                        <li class="cajatexto">
+                            <img src="slide3.jpg" alt="" />
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+        <!--Slider de fotos responsivo con JS-->
+
+
+        <!--Section2 video responsivo-->
+        <section class="section2">
+            <div id="contenedoryoutube">
+                <iframe src="https://www.youtube.com/embed/V7dz9IKoCJk" frameborder="0" allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+        <!--Section2 video responsivo-->
+        <!--Section3 Grid-->
+        <section class="contenedor-puestos ancho">
+            <div class="informacion-puestos">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Necessitatibus at nulla, omnis sed ea magnam laborum quisquam
+                    totam optio fuga, ipsa dolorem tempora incidunt quos esse.
+                    Hic distinctio esse illum?</p>
+                <div>
+                    <i class="check fas fa-check-circle fa-2x"></i>
+                    <h2>Our Tallented Mechanics</h2>
+                </div>
+                <div>
+                    <i class="check fas fa-check-circle fa-2x"></i>
+                    <h2>The perfect Car Repairing methods</h2>
+                </div>
+                <div>
+                    <i class="check fas fa-check-circle fa-2x"></i>
+                    <h2>How Can Car Sell Of Marketing</h2>
+                </div>
+                <div>
+                    <i class="check fas fa-check-circle fa-2x"></i>
+                    <h2>Do you Know This Currency Car</h2>
+                </div>
+                <div>
+                    <i class="check fas fa-check-circle fa-2x"></i>
+                    <h2>24/7 Online Support</h2>
+                </div>
+
+            </div>
+            <div class="aromatizante">
+                <figure>
+                    <a href="#"><img src="imagenes/mecanicos.jpg" alt=""></a>
+                </figure>
+            </div>
+        </section>
+        <!--Section3 Grid-->
+
+
+        <!--Section4 -->
+        <section class="section4 ">
+            <h2>OUR SERVICES</h2>
+            <section class="section4-servicios ancho">
+                <article class="section4-article-servicios">
+                    <div class="filtro"></div>
+                    <div class="iconos wow animate__animated animate__backInDown">
+                        <a href="#"><i class="cuadrado fas fa-award"></i> </a>
+                    </div>
+                    </br>
+                    <h3>QUALITY SERVICE</h3>
+                    <p class="wow animate__animated animate__slideInUp">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Impedit, earum.</p>
+                </article>
+                <article class="section4-article-servicios">
+                    <div class="iconos wow animate__animated animate__backInDown">
+                        <a href="#"><i class="cuadrado fas fa-stethoscope"></i></a>
+                    </div>
+                    </br>
+                    <h3>DIAGNOSTIC TEST</h3>
+                    <p class="wow animate__animated animate__slideInUp">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Impedit, earum.</p>
+                </article>
+                <article class="section4-article-servicios">
+                    <div class="iconos wow animate__animated animate__backInDown">
+                        <a href="#"><i class="cuadrado fas fa-file-invoice"></i></a>
+                    </div>
+                    </br>
+                    <h3>QUALITY PROGRAMAS</h3>
+                    <p class="wow animate__animated animate__slideInUp">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Impedit, earum.</p>
+                </article>
+                <article class="section4-article-servicios">
+                    <div class="iconos wow animate__animated animate__backInDown">
+                        <a href="#"><i class="cuadrado fas fa-users"></i> </a>
+                    </div>
+                    </br>
+                    <h3>GROUP CLASES</h3>
+                    <p class="wow animate__animated animate__slideInUp">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Impedit, earum.</p>
+                </article>
+                <h2>Lorem ipsum dolor sit amet.</h2>
+            </section>
+        </section>
+
+
+        <!--Section5 Galeria-->
+        <section class="section5 ">
+            <h2>OUR CATEGORY</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, reiciendis!</p>
+            <section id="galeria" class="ancho">
+                <div class="contenedor-figure">
+                    <figure>
+                        <a class="fancybox" rel="gallery1" href="imagenes/foto1.jpg" title="FOTO1">
+                            <img src="imagenes/foto1.jpg" alt="" /></a>
+                        <a class="fancybox" rel="gallery1" href="imagenes/foto2.jpg" title="FOTO2">
+                            <img src="imagenes/foto2.jpg" alt="" /></a>
+                    </figure>
+                    <figure>
+                        <a class="fancybox" rel="gallery1" href="imagenes/foto3.jpg" title="FOTO3">
+                            <img src="imagenes/foto3.jpg" alt="" /></a>
+                        <a class="fancybox" rel="gallery1" href="imagenes/foto4.jpg" title="FOTO4">
+                            <img src="imagenes/foto4.jpg" alt="" /></a>
+                    </figure>
+                </div>
+            </section>
+        </section>
+        <!--Section5 Galeria-->
+        
+
+        <!--Section6 Tabs acordeon-->
+       <section class="section6">
+        <h2>OUR EXPERTS</h2>
+        <section class="section-acordeon ancho">         
+            <div class="questions">
+                <h2>Frequently Asked <br>Questions</h2>
+                <div class="content-acordeon">
+                    <div id="acordeon" class="acordeon">
+                        <div class="acordeon-titulo">
+                            <i id="icono" class="simbolo fas fa-plus-square"></i>
+                            <h3>Do you provide any scripts with your templates?</h3>
+                        </div>
+                        <article class="informacion">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, veniam quasi doloremque
+                                impedit
+                                nisi dignissimos,
+                                consequuntur neque expedita vitae provident cupiditate corrupti asperiores error quas quos
+                                accusantium adipisci
+                                blanditiis quam. Officia ipsa dolor laborum veniam, a, porro labore illo sit itaque, ut
+                                optio
+                                voluptate vitae
+                                magnam. Error porro ea eveniet.
+                            </p>
+                        </article>
+                    </div>
+                    <div id="acordeon" class="acordeon">
+                        <div class="acordeon-titulo">
+                            <i id="icono" class="simbolo fas fa-plus-square"></i>
+                            <h3>What do I receive when I order a template?</h3>
+                        </div>
+                        <article class="informacion">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, veniam quasi doloremque
+                                impedit
+                                nisi dignissimos,
+                                consequuntur neque expedita vitae provident cupiditate corrupti asperiores error quas quos
+                                accusantium adipisci
+                                blanditiis quam. Officia ipsa dolor laborum veniam, a, porro labore illo sit itaque, ut
+                                optio
+                                voluptate vitae
+                                magnam. Error porro ea eveniet.
+                            </p>
+                        </article>
+                    </div>
+                    <div id="acordeon" class="acordeon">
+                        <div class="acordeon-titulo">
+                            <i id="icono" class="simbolo fas fa-plus-square"></i>
+                            <h3>In what formats are you template available?</h3>
+                        </div>
+                        <article class="informacion">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, veniam quasi doloremque
+                                impedit
+                                nisi dignissimos,
+                                consequuntur neque expedita vitae provident cupiditate corrupti asperiores error quas quos
+                                accusantium adipisci
+                                blanditiis quam. Officia ipsa dolor laborum veniam, a, porro labore illo sit itaque, ut
+                                optio
+                                voluptate vitae
+                                magnam. Error porro ea eveniet.
+                            </p>
+                        </article>
+                    </div>
+                    <div id="acordeon" class="acordeon">
+                        <div class="acordeon-titulo">
+                            <i id="icono" class="simbolo fas fa-plus-square"></i>
+                            <h3>What am I allowed to do with the templates?</h3>
+                        </div>
+                        <article class="informacion">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, veniam quasi doloremque
+                                impedit
+                                nisi dignissimos,
+                                consequuntur neque expedita vitae provident cupiditate corrupti asperiores error quas quos
+                                accusantium adipisci
+                                blanditiis quam. Officia ipsa dolor laborum veniam, a, porro labore illo sit itaque, ut
+                                optio
+                                voluptate vitae
+                                magnam. Error porro ea eveniet.
+                            </p>
+                        </article>
+                    </div>
+    
+                </div>
+            </div>
+    
+            <!--División-->
+            <div class="skills">
+                <h2>Meet With Our <br>every expert</h2>
+                <div class="content-skills">
+                    <article>
+                        <div class="article-skills">
+                            <h3>Web Design</h3>
+                            <p>90%</p>
+                        </div>
+                        <div class="color_porcent_1"></div>
+                    </article>
+                    <article>
+                        <div class="article-skills">
+                            <h3>Web Design</h3>
+                            <p>65%</p>
+                        </div>
+                        <div class="color_porcent_2"></div>
+                    </article>
+                    <article>
+                        <div class="article-skills">
+                            <h3>Copywriting</h3>
+                            <p>100%</p>
+                          </div>
+                          <div class="color_porcent_3"></div>
+                    </article>
+
+                </div>
+            </div>
+            </section>
+        </section> 
+
+            <script>
+                $('.acordeon-titulo').click(function () {
+                  var t = $(this);
+                  var icon  = t.children('#icono');
+                  var tp = t.next();
+                  tp.slideToggle();
+                  icon.toggleClass('fa-plus-square fa-minus-square');
+                });
+              </script>
+
+
+        <!--Section6 Tabs-->
+
+         <!--Section7 Carrusel-->
+         <script>
+            $(document).ready(function () {
+                $("#slider1").tinycarousel();
+            });
+        </script>
+        <section class="section7">
+        <section id="slider1" class="ancho">
+            <div class="cont_flechas">
+                <div class="informacion">
+                    <h2>OUR TEAM</h2>
+                    <h3>PROFESSIONAL PC REPAIR TEAM</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi ipsa sapiente quis quod voluptatum.
+                        Impedit!</p>
+                    <div class="flechas">
+                        <a class="buttons" href="#">
+                            <i class="fas fa-mobile"></i>
+                        </a>
+                        <a class="buttons" href="#">
+                            <i class="fas fa-envelope-open-text"></i>
+                        </a>
+                        <a class="buttons prev" href="#">
+                            <i class="fas fa-arrow-left"></i>
+                        </a>
+                        <a class="buttons next" href="#">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="viewport">
+                <div class="overview">
+                    <article class="cards">
+                        <figure class="banner">
+                            <img src="images/foto1.jpg" alt="" />
+                            <div class="info">
+                                <h3>COLLABORATOR OF OUR WORK TEAM</h3>
+                                <p>Work description here</p>
+                                <a href="#"><i class="fas fa-search-location fa-2x"></i></a>
+                            </div>
+                        </figure>
+                        <h2>John Tuff</h2>
+                        <p>Field Technician</p>
+                    </article>
+                    <article class="cards">
+                        <figure class="banner">
+                            <img src="images/foto2.jpg" alt="" />
+                            <div class="info">
+                                <h3>COLLABORATOR OF OUR WORK TEAM</h3>
+                                <p>Work description here</p>
+                                <a href="#"><i class="fas fa-search-location fa-2x"></i></a>
+                            </div>
+                        </figure>
+                        <h2>Frank McMillan</h2>
+                        <p>General Manager</p>
+                    </article>
+                    <article class="cards">
+                        <figure class="banner">
+                            <img src="images/foto3.jpg" alt="" />
+                            <div class="info">
+                                <h3>COLLABORATOR OF OUR WORK TEAM</h3>
+                                <p>Work description here</p>
+                                <a href="#"><i class="fas fa-search-location fa-2x"></i></a>
+                            </div>
+                        </figure>
+                        <h2>John Smith</h2>
+                        <p>Field Technician</p>
+                    </article>
+                    <article class="cards">
+                        <figure class="banner">
+                            <img src="images/foto4.jpg" alt="" />
+                            <div class="info">
+                                <h3>COLLABORATOR OF OUR WORK TEAM</h3>
+                                <p>Work description here</p>
+                                <a href="#"><i class="fas fa-search-location fa-2x"></i></a>
+                            </div>
+                        </figure>
+                        <h2>Ben Wilson</h2>
+                        <p>Customer Service Manager</p>
+                    </article>
+                    <article class="cards">
+                        <figure class="banner">
+                            <img src="images/foto5.jpg" alt="" />
+                            <div class="info">
+                                <h3>COLLABORATOR OF OUR WORK TEAM</h3>
+                                <p>Work description here</p>
+                                <a href="#"><i class="fas fa-search-location fa-2x"></i></a>
+                            </div>
+                        </figure>
+                        <h2>Ben Fitzgerald</h2>
+                        <p>Repair Technician</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </section>
+         <!--Section7 Carrusel-->
+
+
+        <!--Section8 Modal Hover-->
+
+        <section class="fondoStandPrice">
+            <section class="articulos ancho">
+                <article class="inf-article">
+                    <div class="icono-info-article">
+                        <a href="#"><i class="simbolos fas fa-briefcase"></i></a>
+                        <h3>Basic</h3>
+                    </div>
+                    <hr>
+                    <div class="info-precio">
+                        <h2>10</h2>
+                        <p>$Per Month</p>
+                    </div>
+                    <hr>
+                    <div class="info-producto">
+                        <p>24/7 Tech Suppot</p>
+                        <p>Advanced Options</p>
+                        <p>1GB Storage</p>
+                        <p>Unlimited Support</p>
+                    </div>
+                    <div class="btn-purchase">
+                        <a id="Btn3" class="hvr-bounce-to-bottom wow animate__animated animate__backInDown">Purchase now</a>
+                    </div>
+                </article>
+                <article class="inf-article">
+                    <div class="icono-info-article">
+                        <a href="#"><i class="simbolos fas fa-rocket"></i></a>
+                        <h3>Standard</h3>
+                    </div>
+                    <hr>
+                    <div class="info-precio">
+                        <h2>21</h2>
+                        <p>$Per Month</p>
+                    </div>
+                    <hr>
+                    <div class="info-producto">
+                        <p>24/7 Tech Suppot</p>
+                        <p>Advanced Options</p>
+                        <p>1GB Storage</p>
+                        <p>Unlimited Support</p>
+                    </div>
+                    <div class="btn-purchase ">
+                        <a id="Btn4" class="hvr-bounce-to-bottom wow animate__animated animate__backInDown">Purchase now</a>
+                    </div>
+                </article>
+                <article class="inf-article">
+                    <div class="icono-info-article">
+                        <a href="#"><i class="simbolos fas fa-gem"></i></a>
+                        <h3>Premiun</h3>
+                    </div>
+                    <hr>
+                    <div class="info-precio">
+                        <h2>99</h2>
+                        <p>$Per Month</p>
+                    </div>
+                    <hr>
+                    <div class="info-producto">
+                        <p>24/7 Tech Suppot</p>
+                        <p>Advanced Options</p>
+                        <p>1GB Storage</p>
+                        <p>Unlimited Support</p>
+                    </div>
+                    <div class="btn-purchase">
+                        <a id="Btn5" class="hvr-bounce-to-bottom wow animate__animated animate__backInDown">Purchase now</a>
+                    </div>
+                </article>
+            </section>
+        </section>
+    
+    
+         <!-- Script modal -->
+         <section id="modal" class="contenidomodal">
+            <div class="estructuramodal">
+              <div class="titulo">
+                <i id="cerrarbtn"  class="rojo fas fa-times-circle"></i>
+              </div>
+              <div >
+                <h2>Contact Us</h2>
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet consequatur </p>
+                      <form class="formulariobody">
+                          <input type="text" id="fname" name="fname" placeholder="Ingrese su nombre">
+                          <input type="email" id="email" name="email" placeholder="Ingrese su email">
+                          <input type="text" id="txt" name="texto" placeholder="Ingrese su mensaje">
+                          <input type="submit" id="submit" value="Submit">
+                      </form>
+              </div>
+            </div>
+          </section>
+      <!-- funcion modal -->
+          <script>
+            var mostrarmodal = document.getElementById("modal") ;
+            var cerrarmodal = document.getElementById("cerrarbtn") ;
+            var btnejecutar = document.getElementById("Btn3");
+            var btnejecutar2 = document.getElementById("Btn4");
+            var btnejecutar3 = document.getElementById("Btn5");
+    
+            btnejecutar.onclick = function(){
+            mostrarmodal.style.display = "block";
+          }
+    
+          btnejecutar2.onclick = function(){
+            mostrarmodal.style.display = "block";
+          }
+          btnejecutar3.onclick = function(){
+            mostrarmodal.style.display = "block";
+          }
+    
+          cerrarmodal.onclick = function(){
+            mostrarmodal.style.display = "none";
+          }
+    
+          window.onclick = function (event) {
+            if (event.target == mostrarmodal) {
+              mostrarmodal.style.display = "none";
+            }
+          };
+          </script>
+    
+    <section class="formulario">
+     
+        <div class="ancho">
+        <div class="contedor_form">
+            <h1 class="tit" id="titulo">Get in Touch</h1>
+            <h4 class="tit">We Will Be Happy To Assist You</h4>
+
+            <form action="">
+                <input type="text" name="fullname"  placeholder="Full Name" id="" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea type="text" name="message" placeholder="Leave Us a Message" cols="30" rows="10" required>
+                </textarea>
+                <button type="submit" class="btn_amarillo">SEND</button>
+            </form>
+             
+        </div>
+        
+    </div>
+    </section>
+<footer>
+    <hr class="fin">
+</footer>
+<script>
+    new WOW().init();
+</script>
+
+</body>
+
+</html>
